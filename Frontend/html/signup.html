@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link
+      rel="shortcut icon"
+      href="../imgs/favicons/favicon6.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="../imgs/favicons/favicon6.ico" type="image/x-icon" />
+    <title>Fitness-Hub | Create your account</title>
+    <link rel="icon" href="../images/Fitness-Hub-Logo.jpg" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="form">
+        <div id="logo_img">
+          <a href="../index.html"
+            ><img src="../images/Fitness-Hub-Logo.jpg" alt="" id="logo" />
+          </a>
+        </div>
+        <p id="signup-heading">Welcome to Fitness-Hub</p>
+        <div id="signup">
+          <form>
+            <div id="name">
+              <div>
+                <label for="firstName">First Name:</label> <br />
+                <input
+                  type="text"
+                  placeholder="Enter Firstname"
+                  id="firstName"
+                  required
+                />
+              </div>
+              <div>
+                <label for="lastName">Last Name:</label> <br />
+                <input
+                  type="text"
+                  placeholder="Enter Lastname"
+                  id="lastName"
+                  required
+                />
+              </div>
+            </div>
+            <br />
+            <div id="email">
+              <label for="Email" id="Email-label">Enter Email-ID:</label> <br />
+              <input
+                type="email"
+                placeholder="Enter Your Email"
+                id="Email"
+                required
+              />
+            </div>
+            <br />
+            <div id="pass">
+              <div>
+                <label for="password1">Password:</label> <br />
+                <input
+                  type="password"
+                  type="password"
+                  placeholder="Enter Your Password"
+                  id="signup-password"
+                  required
+                />
+              </div>
+            </div>
+            <br />
+            <div id="genderAndrole">
+              <div id="select">
+                <label for="gender">Gender:</label> <br />
+                <select id="gender">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div id="select2">
+                <label for="role">Role:</label> <br />
+                <select id="role">
+                  <option value="client">User</option>
+                  <option value="trainer">Trainer</option>
+                </select>
+              </div>
+            </div>
+            <div id="button">
+              <button type="button" id="sign-upButton" onclick="onSignUp()">
+                Sign Up
+              </button>
+            </div>
+            <p id="back-to-login">Back To Login↩️</p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../scripts/signup.js"></script>
+  </body>
+</html>
